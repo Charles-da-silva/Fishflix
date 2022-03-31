@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="icon" type="image/x-icon" href="img/icones/fishflix_ico.png">
+
+    <!-- indicando os CSS baixados de https://owlcarousel2.github.io/OwlCarousel2/  para fazer o carrocel de opções do Netflix -->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+
+    <!-- responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- CSS usado para formatar o Pop-Up dos vídeos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">  
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Magnific-Popup/dialog_popup.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <main>
+        <div class="navbar">
+            <a href="#">
+                <h2 class="logo">FISHFLIX</h2>
+            </a>
+            <nav>
+                <a href="#" class="botao_menu">
+                    Início
+                </a>
+                <a href="#especies" class="botao_menu">
+                    Espécies de CA's
+                </a>
+                <a href="#fotos_gerais" class="botao_menu">
+                    Fotos Gerais
+                </a>
+                <a href="#videos" class="botao_menu">
+                    Vídeos
+                </a>
+                <a href="#contato" class="botao_menu">
+                    Contato
+                </a>
+            </nav>
+        </div>
+
+        <div class="principal">                
+                        
+            <div class="container">
+                <h3 class="titulo">Ciclídeos Africanos</h3> 
+                <p class="descricao">Página dedicada a compartilhar fotos e vídeos dos meus aquários ao longo da minha história no aquarismo, com algumas informações úteis para hobistas sobre os habitatis, boas práticas e dicas.</p>
+                <div class="botoes"> 
+                    <a href="#video_principal" class="botao" id="videoLink2">
+                        <i class="fa-regular fa-circle-play"></i>  <!-- adicionando um ícone ao botão atraves do FONTE AWASOME -->
+                        ASSISTIR VÍDEO PRINCPAL
+                    </a>               
+                    <a href="sobre.html" class="botao popup-youtube" id="videoLink2">
+                        <i class="fa-solid fa-circle-info"></i>  <!-- adicionando um ícone ao botão atraves do FONTE AWASOME -->
+                        SOBRE OS AFRICANOS
+                    </a>               
+                </div>          
+                <div class="content">          
+                    <div id="video_principal" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/dNdTQ95Zs6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                    </div>
+                </div>
+            </div>       
+        </div>     
+        <br><br><br>
+        <h1 id="especies"class="divisoes" >Espécies de Ciclídeos Africanos</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item" >
+                <a class="popup-youtube" href="especies/rostratus.html">
+                    <p class="especie">Rostratus</p>                
+                    <img class="imgs_carrosel" src="img/fish_1.jpg" alt="" srcset="">  
+                </a>              
+            </div>
+            <div class="item" >
+                <a class="popup-youtube" href="especies/Eureka.html">
+                    <p class="especie">Aulonocara Jacobfreibergi (Eureka)</p>
+                    <img class="imgs_carrosel" src="img/fish_2.jpg" alt="" srcset="">
+                </a>                 
+            </div>
+            <div class="item" >
+                <a class="popup-youtube" href="especies/dragon.html">
+                    <p class="especie">Dragon Blood</p>
+                    <img class="imgs_carrosel" src="img/fish_3.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="popup-youtube" href="especies/maleri.html">
+                    <p class="especie">Aulonocara Maleri Yellow</p>
+                    <img class="imgs_carrosel" src="img/fish_4.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="popup-youtube" href="especies/Venustus.html">
+                    <p class="especie">Venustus</p>
+                    <img class="imgs_carrosel" src="img/fish_5.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">       
+                <a class="popup-youtube" href="especies/Iceberg.html">       
+                    <p class="especie">Electric Blue Iceberg</p>
+                    <img class="imgs_carrosel" src="img/fish_7.jpg" alt="" srcset="">
+                </a> 
+            </div>
+            <div class="item">  
+                <a class="popup-youtube" href="especies/OB.html">                
+                    <p class="especie">Aulonocara OB</p>
+                    <img class="imgs_carrosel" src="img/fish_8.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="popup-youtube" href="especies/Rubin.html">   
+                    <p class="especie">Red Rubin</p>
+                    <img class="imgs_carrosel" src="img/fish_10.jpg" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+        <br><br><br>
+
+        <h1 id="fotos_gerais" class="divisoes">Fotos gerais</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_15.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_15.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_16.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_16.jpg" alt="" srcset="">
+                </a>
+            </div>  
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/fish_6.jpg">
+                    <img class="imgs_carrosel" src="img/fish_6.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_1.jpg">                                   
+                    <img class="imgs_carrosel" src="img/outras_fotos_1.jpg" alt="" srcset="">  
+                </a>              
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_2.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_2.jpg" alt="" srcset="">
+                </a>                 
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_3.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_3.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_4.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_4.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_17.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_17.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_5.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_5.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_6.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_6.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_7.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_7.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_8.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_8.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_9.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_9.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_10.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_10.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_11.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_11.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="image-popup-vertical-fit" href="img/fish_9.jpg">  
+                    <img class="imgs_carrosel" src="img/fish_9.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_12.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_12.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_13.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_13.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item" >
+                <a class="image-popup-vertical-fit" href="img/outras_fotos_14.jpg">                    
+                    <img class="imgs_carrosel" src="img/outras_fotos_14.jpg" alt="" srcset="">
+                </a>
+            </div>      
+        </div>
+        <br><br><br>
+        <h1 id="videos" class="divisoes">Vídeos dos meus aquários</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=aJTCdF_kQdE">
+                    <img class="imgs_carrosel" src="img/thumbs/aJTCdF_kQdE.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=DyqsRzzFGKM">
+                    <img class="imgs_carrosel" src="img/thumbs/DyqsRzzFGKM.jpg"" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=dNdTQ95Zs6Y">
+                    <img class="imgs_carrosel" src="img/thumbs/dNdTQ95Zs6Y.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=JJWFoDlKE7c">
+                    <img class="imgs_carrosel" src="img/thumbs/JJWFoDlKE7c.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=JWdtHL26T9Y">
+                    <img class="imgs_carrosel" src="img/thumbs/JWdtHL26T9Y.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=ESKvNqe5NPI">
+                    <img class="imgs_carrosel" src="img/thumbs/ESKvNqe5NPI.jpg" alt="" srcset="">
+                </a>
+            </div>            
+        </div>        
+    </main>
+    
+    <footer id="contato">            
+        <div class="footer_copyright">
+            <p>Contato:</p><br><br>
+            
+            <a href="https://www.facebook.com/charles.silva.10004/" target="_blank">
+                <img class="logos" src="./img/icones/facebook.png" alt="logo_facebook">
+            </a>
+            <a href="https://www.youtube.com/user/emaildocharles" target="_blank">
+                <img class="logos" src="./img/icones/youtube.png" alt="logo_youtube">
+            </a>
+            <a href="https://www.instagram.com/emaildocharles/" target="_blank">
+                <img class="logos" src="./img/icones/instagram.png" alt="logo_Instagram">
+            </a>
+            <a href="https://github.com/Charles-da-silva" target="_blank">
+                <img class="logos" src="./img/icones/github.png" alt="logo_GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/charlessilvadasilva/" target="_blank">
+                <img class="logos" src="./img/icones/linkedin.png" alt="logo_Linkedin">
+            </a>            
+            <p>© 1997-2022 Fishflix, Inc.<br>
+            Desenvolvido por Charles Silva
+            </p>
+        </div>
+    </footer>
+
+
+    <!--  por padrão os arquivos de JavaScript devem ser linkados ao final da página -->
+
+    <script src="https://kit.fontawesome.com/54f565aa61.js" crossorigin="anonymous"></script> <!-- FONTE AWESOME é um site que nos permite utilizar de ícones e outros, gratuitos e pagos -->
+    <script src="js/owl/jquery.min.js"></script>  <!-- indicando o javascript para o carrosel -->
+    <script src="js/owl/owl.carousel.min.js"></script>  <!-- indicando o javascript para o carrosel -->
+    <script src="js/owl/setup.js"></script>  <!-- indicando o javascript para o carrosel -->
+    
+    <!-- JS's usados para o Pop-Up dos vídeos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+    <script src="Magnific-Popup/popup-video.js"></script>
+    <script src="Magnific-Popup/Single_Image_LithBox.js"></script>
+</body>
+</html>

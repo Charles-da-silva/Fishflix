@@ -1,0 +1,225 @@
+/*aqui neste primeiro momento estamos declarando variáveis dentro do CSS, para ficar mais fácil de reutilizar as cores abaixo em todo nosso documento html/css */
+
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*utilizado para que os elementos internos do box não ultrapassem o tamanho do mesmo*/
+}
+
+body{
+    background: var(--preta);  /*aqui é exibido a forma de usar as variáveis declaradas no início do doc*/
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.navbar{
+    top: 0;
+    padding-left: 30px;
+    z-index: 2;
+    background: #141414;
+    width: 100%;
+    position: fixed;
+    display: flex;   /*aqui estamos alinhando todos os componentes do header na mesma linha*/
+    flex-direction: row;
+    align-items: center;  /*por padrão os elementos ficarão todos alinhados no topo. Aqui estamos alinhando-os */
+    justify-content: space-between;  /* para que seja criado um espaço entre os componentes (div) do hearder, jogando o logo em um canto da tela e os menus em outro */
+}
+
+.logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+a{
+    text-decoration:none;  /*removendo o decoration default dos links (aquele sublinhado)*/
+    color: #AAA;
+    margin-right: 10px;
+}
+
+nav a:hover{    /*hover corresponde a ação de passar o mouse por cima. Aqui no nosso caso quando o mouse passar por cima de qualquer âncora do hearder/nav   */
+    color: #fff;
+}
+
+.principal{
+    font-size: 16px;
+    background: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.1)100%), url('../img/capa.jpg'); /*aqui está sendo feito um gradiente entre três itens, sendo duas cores e uma imagem, o que ajuda a dar foco (aumenta a nitidez) do texto)  */
+
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column; /*indicando que o conteúdo será alinhado em forma de coluna */
+    justify-content: center; /*centralizando o conteúdo no meio da coluna */
+    align-items: flex-start; /*alinhando o conteúdo ao início da tela (centralizado como indicado na linha acima) */
+}
+
+.principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 50%;
+    font-size: large;
+}
+
+.principal .titulo{
+    margin-top: 15%;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.principal .botao{
+    background-color: rgba(0,0,0,.50);
+    border: transparent;
+    border-radius: 10px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 70px;
+    font-size: 12px;
+
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao_menu{
+    background-color: rgba(236, 8, 8, 0.7);
+    border: transparent;
+    border-radius: 10px;
+    color: black;
+
+    padding: 5px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao_menu:hover{
+    background-color: var(--preta);
+    color: var(--vermelho);
+    border: 2px white; 
+    border-radius: 10px;
+}
+
+.principal .container{
+    margin-left: 30px;
+}
+
+.botao:hover{
+    background-color: red;
+    color: black;
+    border: 2px white; 
+    border-radius: 10px;
+}
+
+.botao i{
+    margin-right: 15px;
+    font-size: large;
+}
+
+.imgs_carrosel{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.item{
+    height: 200px;
+    width: auto;
+}
+
+.divisoes{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.especie{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+
+.mfp-hide {
+    display: none!important;
+}
+
+.button {
+    padding: 20px 40px;
+    border-color: #f3f3f3;
+    font-size: 17px;
+    font-size: 1.7rem;
+    font-family: "museo-sans", Arial, Verdana;
+    font-weight: 500;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.button .fa {
+    margin-left: 20px;
+}
+
+.button:hover {
+    background-color: rgba(0,0,0,0.7); 
+}
+
+span {
+    font-size: 23px;
+    font-size: 2.3rem;
+    display: block;
+    font-family: "museo-sans", Arial, Verdana;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+.footer_copyright{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.logos{
+    height: 55px;
+    margin-bottom: 35px;
+}

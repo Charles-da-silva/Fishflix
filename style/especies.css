@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.1)200%), url('../img/outras_fotos_7.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: #141414;
+    margin-left: 50px;
+    margin-right: 70px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: 18px;        
+    text-align: justify;
+}
+
+h2{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}

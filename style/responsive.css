@@ -1,0 +1,37 @@
+@media screen and (max-width:600px) {
+    
+    header .container{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .botao{
+        margin: 0;
+        padding: auto;
+        margin-top: 5px;
+    }
+
+    .filme-principal .descricao{
+        margin-top: 10px;
+        margin-bottom: 50px;
+        width: 95%;
+        text-decoration-color: blue;
+    }
+
+    .titulo{
+        margin-right: 30px;
+        font-size: 10px;
+        text-decoration-color: blue;
+    }
+
+    
+}
+
+@media screen and (min-width:1412px){
+
+    .filme-principal{
+        height: 700px;
+    }
+}
+
+
