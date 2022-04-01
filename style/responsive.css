@@ -1,37 +1,83 @@
 @media screen and (max-width:600px) {
     
-    header .container{
+    
+    .navbar{
+        padding-left: 20px;
+        padding-right: 0;
+        margin-right: 0;
         display: flex;
         flex-direction:column;
+        text-align: center;
+        padding-bottom: 9px;
     }
 
-    .botao{
-        margin: 0;
-        padding: auto;
+    .botao_menu{
         margin-top: 5px;
+        margin-bottom: 5px;
+        display: inline-flex;
+        font-size: 13px;
+        width: fit-content;
+        height: fit-content;
+
+        padding: 3px 10px;
+        margin-right: 5px;
     }
 
-    .filme-principal .descricao{
+    .principal .botao{       
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 11px;
+        margin-bottom: 5px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        justify-content: center;
+    }
+
+    .botoes{
+        width: fit-content;
+        display: flex;
+    }
+
+    .principal .container{       
+        margin-top: 250px;
+        margin-bottom: 70px;
+        margin-left: 15px;
+    }
+
+    .principal .descricao{
         margin-top: 10px;
         margin-bottom: 50px;
-        width: 95%;
-        text-decoration-color: blue;
+        width: 100%;
+        font-size: 13px;
     }
 
-    .titulo{
-        margin-right: 30px;
-        font-size: 10px;
-        text-decoration-color: blue;
+    .principal .titulo{
+        margin-right: 10px;
+        font-size: 40px;
     }
 
-    
+    .divisoes{
+        font-size: 18px;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+
+    .footer_copyright{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .logos{
+        height: 35px;
+    }
 }
 
-@media screen and (min-width:1412px){
+/* @media screen and (min-width:1412px){
 
     .filme-principal{
         height: 700px;
     }
-}
+} */
 
 

@@ -81,12 +81,16 @@ nav a:hover{    /*hover corresponde a ação de passar o mouse por cima. Aqui no
     color: white;
 
     padding: 15px 30px;
-    margin-right: 15px;
     margin-bottom: 70px;
-    font-size: 12px;
+    font-size: 13px;
 
     cursor:pointer;
     transition: .3s ease all;
+}
+
+.botao i{
+    margin-right: 15px;
+    font-size: large;
 }
 
 .botao_menu{
@@ -122,10 +126,7 @@ nav a:hover{    /*hover corresponde a ação de passar o mouse por cima. Aqui no
     border-radius: 10px;
 }
 
-.botao i{
-    margin-right: 15px;
-    font-size: large;
-}
+
 
 .imgs_carrosel{
     height: 100%;
@@ -140,7 +141,7 @@ nav a:hover{    /*hover corresponde a ação de passar o mouse por cima. Aqui no
 
 .divisoes{
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-bottom: 40px;
     padding-left: 25px;
     padding-right: 25px;
