@@ -1,21 +1,24 @@
-body{
-    background-color: #141414;
-    margin: 15px 15px;
-    color: white;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
 }
 
-p{
+body{
+    background-color: #141414;
+    margin: 15px 15px;       
+}
+
+p, ul{
     font-size: 14px;        
     text-align: justify;
     text-justify: inter-ideograph;
 }
 
-h2{
+/* h2{
     padding-top: 60px;
     padding-bottom: 20px;
-}
+} */
 
 .img_especies{
     width: 100%;
