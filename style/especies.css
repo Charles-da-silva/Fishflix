@@ -1,19 +1,15 @@
 body{
-    background: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.1)200%), url('../img/outras_fotos_7.jpg');
-    background-size: contain;
-    background-attachment: fixed;
     background-color: #141414;
-    margin-left: 50px;
-    margin-right: 70px;
-    margin-top: 5px;
-    margin-bottom: 50px;
+    margin: 15px 15px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p{
-    font-size: 18px;        
+    font-size: 14px;        
     text-align: justify;
+    text-justify: inter-ideograph;
 }
 
 h2{
@@ -23,4 +19,8 @@ h2{
 
 .img_especies{
     width: 770px;
+}
+
+strong {
+    color: #008080;
 }
